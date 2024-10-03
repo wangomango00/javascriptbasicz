@@ -65,7 +65,7 @@ function square(number) {
  console.log(square(2));
 
 //arithmetic operators
- let x = 10; 
+ let x1 = 10; 
  let y = 3; 
 
 // console.log(x + y);
@@ -83,7 +83,7 @@ function square(number) {
  console.log(--x);
 
 //assignment operator
- let x = 10;
+ let x3  = 10;
 
  x = x + 5;
  x += 5;
@@ -96,7 +96,7 @@ confirms the validity of a
 comparison
 */
   
- let x = 1;
+ let x2 = 1;
  //relational 
  console.log(x > 0);
  console.log(x >= 1);
@@ -192,3 +192,60 @@ non-booleans */
  if (role === 'guest') console.log('guest');
  else if (role === 'moderator') console.log('moderator');
  else console.log('unknown user');
+
+//for : loop will execute as long as condition is TRUE //
+for (let a = 0; a < 5; a++) {
+    console.log('hello world!', a);
+}
+for (let a = 1; a <= 5; a++) {
+    if (a % 2 != 0) console.log(a);
+}
+/* while loop : a loop that continues to run and
+execute a while statement as long as a predetermined
+condition holds TRUE 
+*/
+/*let i = 0;
+while (i <= 5) {
+    if (i % 2 != 0) console.log(i);
+    i++
+} */
+
+/* || do--while loops : always executed at least 
+ONCE, even if the condition is FALSE. || */
+// let i = 0; 
+// do {
+//     if (i % 2 !== 0) console.log(i);
+//     i++;
+// } while (i <= 5);
+
+//infinite loopz : executes infinitely; forever
+ 
+ let i = 0;
+ while (1 < 5) {
+    console.log(i);
+    // i++;
+ }
+
+ for (let i = 0; i > 0; i++)
+    console.log(i);
+
+ /* for..in loop : to iterate over the properties of an object
+ or elements in an array
+ */
+ const person = {
+    name: 'mosh',
+    age: '30'
+ };
+
+ for (let key in person[key])
+    console.log(key);
+
+ //dot notation
+ person.name
+ //bracket notation
+ person['name']
+
+ const colors = ['red', 'green', 'blue'];
+
+ for (let index in colors)
+console.log(index, colors[index]);
