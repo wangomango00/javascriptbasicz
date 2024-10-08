@@ -249,3 +249,23 @@ ONCE, even if the condition is FALSE. || */
 
  for (let index in colors)
 console.log(index, colors[index]);
+
+//for...of loops : similar to for..in. use 'of' instead of 'in'
+ const colors = ['red', 'green', 'blue'];
+
+ for (let color of colors)
+    console.log(color);
+
+/*break and continue : can change how loop behaves */
+let j = 0;
+while(j <=10) {
+//if (i === 5) break;
+if (j % 2 === 0) {
+    j++;
+    continue;
+}
+
+    console.log(j);
+    j++;
+}
+
